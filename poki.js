@@ -7,7 +7,7 @@ function runSearch() {
   let inputTotal = document.querySelector('.input-number').value;
   let innerValue = document.querySelector('.inputElement').value;
 
-  fetch('https://pokeapi.co/api/v2/type?limit=21')
+  fetch('https://pokeapi.co/api/v2/type?limit=20')
   .then(response => response.json())
   .then(data => {
     const pokemonList = data.results;
